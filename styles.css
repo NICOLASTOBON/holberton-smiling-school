@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'holberton-icon';
+  src:
+    url('/holberton_school-icon/fonts');
+  src:
+    url('/holberton_school-icon/fonts/holberton_school-icon.ttf') format('embedded-opentype'),
+    url('/holberton_school-icon/fonts/holberton_school-icon.ttf') format('truetype'),
+    url('/holberton_school-icon/fonts/holberton_school-icon.woff') format('woff'),
+    url('/holberton_school-icon/fonts/holberton_school-icon.svg') format('svg');
+}
+
+:root {
+  --primary-color: #C271FF;
+  --color-white: #fff;
+
+  --grey-light: #afafaf;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+.text-color-main {
+  color: var(--primary-color);
+}
+
+/** HERO IMAGE */
+.hero-img {
+  background: url("/images/pic_1.jpg") center no-repeat fixed;
+  background-size: cover;
+}
+
+/** BTN */
+.btn-color {
+  background-color: var(--primary-color);
+}
+.btn-color:hover {
+  opacity: 0.9;
+}
+
+/** HEADER */
+
+header div .logo {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+header div .logo .logo-smile {
+  width: 4.5rem;
+}
+
+header div .logo .logo-text {
+  width: 15rem;
+}
+
+.burgerIcon {
+  top: 2rem;
+  cursor: pointer;
+}
+
+[aria-expanded="true"]::before,
+[aria-expanded="false"]::before {
+  font-size: 3.3rem;
+  color: var(--color-white);
+}
+
+[aria-expanded="true"]::before {
+  content: "\00D7";
+  font-weight: bold;
+}
+
+[aria-expanded="false"]::before {
+  content: "\e911";
+  font-family: holberton-icon;
+}
+
+.nav-item-link {
+  font-size: 1.4rem;
+}
+
+/** HERO SECTION */
+
+.hero-content h1{
+  font-size: 6rem;
+}
+
+.hero-content div p {
+  font-size: 1.5rem;
+}
+
+.hero-content a {
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.hero h2 {
+  font-size: 3rem ;
+}
+
+/** HERO ARTICLES */
+
+.hero-articles img {
+  width: 16rem;
+}
+
+.hero-articles article img + p {
+  font-size: 1.8rem;
+}
+
+.hero-articles article img + p + p {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 425px) {
+  .col-6 {
+    max-width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
