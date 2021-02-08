@@ -13,6 +13,8 @@
   --primary-color: #C271FF;
   --color-white: #fff;
 
+  --color-white-transparent: #ffffffb6;
+
   --grey-light: #afafaf;
 }
 
@@ -87,7 +89,8 @@ header div .logo .logo-text {
   font-size: 6rem;
 }
 
-.hero-content div p {
+.hero-content div p,
+.card-body h5 {
   font-size: 1.5rem;
 }
 
@@ -134,6 +137,45 @@ header div .logo .logo-text {
   width: 3.6rem;
 }
 
+.video {
+  top: 3rem;
+  left: 6rem;
+  padding: 2.4rem;
+  background-color: var(--color-white-transparent);
+  transform: rotate(-90deg);
+}
+
+.video-play {
+  width: 0;
+  height: 0;
+  top: 1.8rem;
+	border-left: 1rem solid transparent;
+  border-top: 2rem solid var(--primary-color);
+  border-right: 1rem solid transparent;
+}
+
 .carousel-content .content-text {
   font-size: 2rem;
+}
+
+.section-courses .card {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.section-courses .card .card-img-top {
+  width: 100%;
+}
+
+.section-courses .card-review-img img {
+  width: 3rem;
+}
+
+.section-courses .card-review-img p,
+.card-body p {
+  font-size: 1.2rem;
+}
+
+.calification-star img {
+  width: 1.5rem;
 }
