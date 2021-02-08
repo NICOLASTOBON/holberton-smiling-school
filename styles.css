@@ -11,10 +11,10 @@
 
 :root {
   --primary-color: #C271FF;
+  --secondary-color: #071629;
+
   --color-white: #fff;
-
   --color-white-transparent: #ffffffb6;
-
   --grey-light: #afafaf;
 }
 
@@ -26,6 +26,10 @@ html {
 
 .text-color-main {
   color: var(--primary-color);
+}
+
+.bg-color-secondary {
+  background-color: var(--secondary-color);
 }
 
 /** HERO IMAGE */
@@ -90,11 +94,13 @@ header div .logo .logo-text {
 }
 
 .hero-content div p,
-.card-body h5 {
+.card-body h5,
+.membership-articles img + p {
   font-size: 1.5rem;
 }
 
-.hero-content a {
+.hero-content a,
+.membership-section div a {
   font-size: 1.4rem;
   text-decoration: none;
 }
@@ -172,10 +178,17 @@ header div .logo .logo-text {
 }
 
 .section-courses .card-review-img p,
-.card-body p {
+.card-body p,
+.membership-articles img + p + p {
   font-size: 1.2rem;
 }
 
 .calification-star img {
   width: 1.5rem;
+}
+
+/** MEMBERSHIP SECTION */
+
+.membership-articles img {
+  width: 4rem;
 }
