@@ -54,11 +54,11 @@ header div .logo {
   margin: 0 auto;
 }
 
-header div .logo .logo-smile {
+.logo .logo-smile {
   width: 4.5rem;
 }
 
-header div .logo .logo-text {
+.logo .logo-text {
   width: 15rem;
 }
 
@@ -191,4 +191,34 @@ header div .logo .logo-text {
 
 .membership-articles img {
   width: 4rem;
+}
+
+/** FOOter */
+
+.facebook-icon::before,
+.instagram-icon::before,
+.twitter-icon::before {
+  font-family: holberton-icon;
+  font-size: 3.3rem;
+  color: var(--color-white);
+}
+
+.instagram-icon::before {
+  content: "\e90a";
+}
+
+.twitter-icon::before {
+  content: "\e90f";
+}
+
+.facebook-icon::before {
+  content: "\e908";
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media a span:hover::before {
+  color: var(--primary-color);
 }
