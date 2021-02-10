@@ -38,6 +38,11 @@ html {
   background-size: cover;
 }
 
+.hero-img.-pricing{
+  background: url("/images/pic_2.jpg") top no-repeat fixed;
+  background-size: cover;
+}
+
 /** BTN */
 .btn-color,
 .section-carousel {
@@ -45,6 +50,11 @@ html {
 }
 .btn-color:hover {
   opacity: 0.9;
+}
+
+button.btn-color {
+  padding: .9rem 1.8rem !important;
+  font-size: 1rem;
 }
 
 /** HEADER */
@@ -179,7 +189,8 @@ header div .logo {
 
 .section-courses .card-review-img p,
 .card-body p,
-.membership-articles img + p + p {
+.membership-articles img + p + p,
+button + h2 + span {
   font-size: 1.2rem;
 }
 
@@ -221,4 +232,38 @@ header div .logo {
 
 .social-media a span:hover::before {
   color: var(--primary-color);
+}
+
+/** CONTENT TITLE PRICING */
+.content-title {
+  font-size: 2rem;
+}
+
+button + h2 {
+  font-size: 3rem !important;
+}
+
+@media (min-width: 1000px) {
+  button.btn-color {
+    padding: 1rem 2rem !important;
+    font-size: 1.5rem;
+  }
+
+  button + h2 {
+    font-size: 3.9rem !important;
+  }
+}
+
+.th-text {
+  font-size: 1.5rem;
+}
+
+.check-icon::before {
+  content: "\e905";
+  font-size: 3rem;
+  font-family: holberton-icon;
+  color: #82D24F;
+}
+.signal-icon {
+  width: 8rem;
 }
