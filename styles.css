@@ -99,7 +99,8 @@ header div .logo {
 
 /** HERO SECTION */
 
-.hero-content h1{
+.hero-content h1,
+.faq-section h2 {
   font-size: 6rem;
 }
 
@@ -190,7 +191,8 @@ header div .logo {
 .section-courses .card-review-img p,
 .card-body p,
 .membership-articles img + p + p,
-button + h2 + span {
+button + h2 + span,
+.faq-section .faq-content p {
   font-size: 1.2rem;
 }
 
