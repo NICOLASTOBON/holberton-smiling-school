@@ -43,9 +43,15 @@ html {
   background-size: cover;
 }
 
+.hero-img.-courses {
+  background: url('/images/pic_3.jpg') center no-repeat fixed;
+  background-size: cover
+}
+
 /** BTN */
 .btn-color,
-.section-carousel {
+.section-carousel,
+.section-search {
   background-color: var(--primary-color);
 }
 .btn-color:hover {
@@ -77,18 +83,18 @@ header div .logo {
   cursor: pointer;
 }
 
-[aria-expanded="true"]::before,
-[aria-expanded="false"]::before {
+div[aria-expanded="true"]::before,
+div[aria-expanded="false"]::before {
   font-size: 3.3rem;
   color: var(--color-white);
 }
 
-[aria-expanded="true"]::before {
+div[aria-expanded="true"]::before {
   content: "\00D7";
   font-weight: bold;
 }
 
-[aria-expanded="false"]::before {
+div[aria-expanded="false"]::before {
   content: "\e911";
   font-family: holberton-icon;
 }
@@ -101,7 +107,7 @@ header div .logo {
 
 .hero-content h1,
 .faq-section h2 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .hero-content div p,
@@ -184,11 +190,11 @@ header div .logo {
   width: 100%;
 }
 
-.section-courses .card-review-img img {
+.card-review-img img {
   width: 3rem;
 }
 
-.section-courses .card-review-img p,
+.card-review-img p,
 .card-body p,
 .membership-articles img + p + p,
 button + h2 + span,
@@ -226,6 +232,10 @@ button + h2 + span,
 
 .facebook-icon::before {
   content: "\e908";
+}
+
+.search-icon::before {
+  content: "\e912";
 }
 
 .social-media a {
@@ -268,4 +278,66 @@ button + h2 {
 }
 .signal-icon {
   width: 8rem;
+}
+
+/** COURSES */
+
+.search-input input,
+a.btn-secondary  {
+  text-indent: 1.2rem;
+  background-color: #ffffff42;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--color-white) !important;
+  outline: 0;
+}
+
+.search-input input:focus {
+  color: var(--color-white);
+  border-color: #545b62;
+  box-shadow: 0 0 0 0.2rem rgb(130 138 145 / 50%);
+}
+
+.search-input input::placeholder {
+  font-size: 1.2rem;
+  color: var(--color-white);
+}
+
+.search-input span {
+  top: 2.4rem;
+  left: 2.1rem;
+}
+
+.search-icon::before {
+  font-family: holberton-icon;
+  font-size: 1.5rem;
+  color: var(--color-white);
+}
+
+a.btn-secondary:hover,
+a.btn-secondary:focus {
+  background: #ffffff42 !important;
+}
+
+.section-search label {
+  font-size: 1.1rem;
+}
+
+.dropdown-item:hover {
+  color: var(--primary-color) !important;
+}
+
+#topics,
+#most {
+  width: 93%;
+  margin: 0 1.2rem;
+}
+
+.videos-content .card {
+  width: 30rem;
+  margin: 5rem 3rem;
+}
+
+.videos-content .card .video {
+  top: 4rem;
+  left: 11rem;
 }
